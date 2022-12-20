@@ -1,0 +1,61 @@
+<html>
+
+<head>
+  <title>NPSIS OFFICIAL CHAT APP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Bebas+Neue&family=Bungee+Spice&family=Cormorant+SC:wght@300;500&family=Edu+VIC+WA+NT+Beginner:wght@400;600&family=Ibarra+Real+Nova&family=Josefin+Sans:ital,wght@1,600&family=Mochiy+Pop+One&family=Monoton&family=Mouse+Memoirs&family=Nunito:ital@1&family=Roboto:wght@300&family=Rubik+Distressed&family=Rubik+Maze&family=Secular+One&display=swap" rel="stylesheet">
+ 
+
+  <link rel="stylesheet"  href="sign-in.css">
+  <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />">
+</head>
+
+<body>
+    <div class="container">
+        
+         <div class="form-box" data-tilt>
+            <h1>Login Here</h1>
+            <div class="input-box">
+                <i class="fa fa-envelope-o"></i>
+                <input type="email" placeholder="Enter Your npsis Email ID">
+            </div>
+            <div class="input-box">
+                <i class="fa fa-key" ></i>
+                <input type="password" placeholder="Password" id="myInput">
+                <span class="eye" onclick="myFunction()">
+                <i id="hide1" class="fa fa-eye" ></i>
+                <i id="hide2" class="fa fa-eye-slash"></i>
+            </span>
+            </div>
+            <button type="button" class="login-btn">LOGIN</button>
+         </div>
+        
+      </div>
+
+<script>
+    function myFunction(){
+        var x = document.getElementById("myInput");
+        var y = document.getElementById("hide1");
+        var z = document.getElementById("hide2");
+        if(x.type === 'password'){
+            x.type  ='text';
+            y.style.display = "block";
+            z.style.display = "none";
+        }
+        else{
+            x.type  ='password';
+            y.style.display = "none";
+            z.style.display = "block";
+        }
+    }
+</script>
+
+
+<script src="sign-in.js"></script>
+    </body>
+
+    </html>
+    
